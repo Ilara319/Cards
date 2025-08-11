@@ -1,12 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet"
-  />
-  <title>Flashcard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+    <div class="flashcard-container">
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Pergunta 1</h2>
+                    <p>Qual a capital do Brasil?</p>
+                </div>
+                <div class="flashcard-back">
+                    <h2>Resposta 1</h2>
+                    <p>Brasília</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Pergunta 2</h2>
+                    <p>Em que ano a independência do Brasil foi proclamada?</p>
+                </div>
+                <div class="flashcard-back">
+                    <h2>Resposta 2</h2>
+                    <p>1822</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+</body>
+</html>
