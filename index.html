@@ -1,42 +1,27 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flashcards de Programação</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .card { 
+            width: 300px; height: 150px; padding: 20px;
+            border: 2px solid #333; margin: auto;
+            display: flex; justify-content: center; align-items: center;
+            cursor: pointer; background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="flashcard-container">
-        <div class="flashcard" onclick="this.classList.toggle('flipped')">
-            <div class="flashcard-inner">
-                <div class="flashcard-front">
-                    <h2>Pergunta 1</h2>
-                    <p>Qual a capital do Brasil?</p>
-                </div>
-                <div class="flashcard-back">
-                    <h2>Resposta 1</h2>
-                    <p>Brasília</p>
-                </div>
-            </div>
-        </div>
+    <h1>Flashcards Interativos</h1>
+    <p>Clique no cartão para ver a resposta.</p>
 
-        <div class="flashcard" onclick="this.classList.toggle('flipped')">
-            <div class="flashcard-inner">
-                <div class="flashcard-front">
-                    <h2>Pergunta 2</h2>
-                    <p>Em que ano a independência do Brasil foi proclamada?</p>
-                </div>
-                <div class="flashcard-back">
-                    <h2>Resposta 2</h2>
-                    <p>1822</p>
-                </div>
-            </div>
-        </div>
+    <div class="card" onclick="virarCard()">
+        <p id="conteudo-card">O que é uma função em JavaScript?</p>
+    </div>
 
-        </div>
+    <script src="flashcard.js"></script>
 
 </body>
 </html>
